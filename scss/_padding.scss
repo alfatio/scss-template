@@ -1,0 +1,23 @@
+@for $var from 1 to 15 {
+  .pt-#{$var}  {
+    padding-top: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 15 {
+  .pr-#{$var}  {
+    padding-right: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 15 {
+  .pb-#{$var}  {
+    padding-bottom: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 15 {
+  .pl-#{$var}  {
+    padding-left: #{$var / 4}rem;
+  }
+}

@@ -1,0 +1,106 @@
+
+//primary
+
+$primary-color-1: rgba(18, 49, 73, 1);
+$primary-color-2: rgba(24, 66, 98, 1);
+$primary-color-3: rgba(30, 83, 124, 1);
+$primary-color-4: rgba(37, 101, 150, 1);
+$primary-color-5: rgba(43, 118, 176, 1);
+$primary-color-6: rgba(49, 136, 202, 1);
+$primary-color-7: rgba(73, 151, 210, 1);
+$primary-color-8: rgba(99, 166, 217, 1);
+$primary-color-9: rgba(125, 181, 223, 1);
+$primary-color-10: rgba(151, 196, 230, 1);
+$primary-color-11: rgba(177, 210, 236, 1);
+$primary-color-12: rgba(203, 225, 242, 1);
+$primary-color-13: rgba(229, 240, 249, 1);
+
+$primary : (
+  primary-color-1: #{$primary-color-1},
+  primary-color-2: #{$primary-color-2},
+  primary-color-3: #{$primary-color-3},
+  primary-color-4: #{$primary-color-4},
+  primary-color-5: #{$primary-color-5},
+  primary-color-6: #{$primary-color-6},
+  primary-color-7: #{$primary-color-7},
+  primary-color-8: #{$primary-color-8},
+  primary-color-9: #{$primary-color-9},
+  primary-color-10: #{$primary-color-10},
+  primary-color-11: #{$primary-color-11},
+  primary-color-12: #{$primary-color-12},
+  primary-color-13: #{$primary-color-13},
+);
+
+//neutral
+
+
+$neutral: (
+  neutral-color-1: #131619,
+  neutral-color-2: #262B31,
+  neutral-color-3: #39414A,
+  neutral-color-4: #4C5763,
+  neutral-color-5: #5F6C7B,
+  neutral-color-6: #728293,
+  neutral-color-7: #8B98A6,
+  neutral-color-8: #9EA9B5,
+  neutral-color-9: #B2BAC4,
+  neutral-color-10: #C5CCD3,
+  neutral-color-11: #D8DDE1,
+  neutral-color-12: #ECEEF0,
+  neutral-color-13: #FFFFFF,
+);
+
+
+//warning
+$warning : (
+  warning-color-1: rgba(180, 105, 33, 1),
+  warning-color-2: rgba(214, 125, 39, 1),
+  warning-color-3: rgba(242, 153, 74, 1),
+  warning-color-4: rgba(245, 173, 110, 1),
+  warning-color-5: rgba(247, 194, 146, 1),
+  warning-color-6: rgba(250, 214, 183, 1),
+  warning-color-7: rgba(251, 224, 201, 1),
+  warning-color-8: rgba(252, 235, 219, 1),
+);
+//success
+$success : (
+  success-color-1: rgba(22, 95, 53, 1),
+  success-color-2: rgba(26, 122, 67, 1),
+  success-color-3: rgba(33, 150, 83, 1),
+  success-color-4: rgba(77, 171, 117, 1),
+  success-color-5: rgba(122, 192, 152, 1),
+  success-color-6: rgba(166, 213, 186, 1),
+  success-color-7: rgba(211, 234, 221, 1),
+  success-color-8: rgba(233, 245, 238, 1),
+);
+//danger
+
+$danger : (
+  danger-color-1: rgba(174, 65, 65, 1),
+  danger-color-2: rgba(208, 75, 75, 1),
+  danger-color-3: rgba(235, 87, 87, 1),
+  danger-color-4: rgba(239, 121, 121, 1),
+  danger-color-5: rgba(243, 154, 154, 1),
+  danger-color-6: rgba(247, 188, 188, 1),
+  danger-color-7: rgba(251, 221, 221, 1),
+  danger-color-8: rgba(253, 238, 238, 1),
+);
+
+:root {
+  @each $key, $val in $primary {
+    --#{$key} : #{$val};
+  }
+  @each $key, $val in $neutral {
+    --#{$key} : #{$val};
+  }
+  @each $key, $val in $warning {
+    --#{$key} : #{$val};
+  }
+  @each $key, $val in $success {
+    --#{$key} : #{$val};
+  }
+  @each $key, $val in $danger {
+    --#{$key} : #{$val};
+  }
+}
+

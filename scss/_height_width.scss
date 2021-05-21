@@ -1,0 +1,55 @@
+
+.w-full{
+  width: 100%;
+}
+.min-w-full{
+  min-width: 100%;
+}
+.max-w-full{
+  max-width: 100%;
+}
+.h-full{
+  height: 100%;
+}
+.min-h-full{
+  min-height: 100%;
+}
+.max-h-full{
+  max-height: 100%;
+}
+
+@for $var from 1 to 40 {
+  .h-#{$var}  {
+    height: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 40 {
+  .w-#{$var}  {
+    height: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 40 {
+  .min-h-#{$var}  {
+    min-height: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 40 {
+  .min-w-#{$var}  {
+    min-width: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 40 {
+  .max-h-#{$var}  {
+    max-height: #{$var / 4}rem;
+  }
+}
+
+@for $var from 1 to 40 {
+  .max-w-#{$var}  {
+    max-width: #{$var / 4}rem;
+  }
+}

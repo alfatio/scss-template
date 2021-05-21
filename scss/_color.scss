@@ -1,0 +1,33 @@
+
+
+
+
+@for $var from 1 to 14 {
+  .color-p-#{$var}{
+    color: var(--primary-color-#{$var});
+  }
+}
+
+@for $var from 1 to 14 {
+  .color-n-#{$var}{
+    color: var(--neutral-color-#{$var});
+  }
+}
+
+@for $var from 1 to 9 {
+  .color-w-#{$var}{
+    color: var(--warning-color-#{$var});
+  }
+}
+
+@for $var from 1 to 9 {
+  .color-s-#{$var}{
+    color: var(--success-color-#{$var});
+  }
+}
+
+@for $var from 1 to 9 {
+  .color-d-#{$var}{
+    color: var(--danger-color-#{$var});
+  }
+}
