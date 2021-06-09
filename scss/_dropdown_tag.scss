@@ -1,0 +1,103 @@
+
+
+//["20021", "20027", "20028", "20030", "20022", "20023", "20024", "20025", "20026", "20029", "20031", "20033", "20032"]
+// ["Cancelled Trip", "Loading Trip", "New Trip", "Transport on Hold", "Trip Closed", "Trip Completed", "Trip Empty", "Trip on Hold No Client", "Trip on Hold No Supplier", "Trip Planned", "Trip Transport", "Trip Unplanned", "Unloading Trip"]
+.choices__list[dir="ltr"]{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+[data-value="CANTR"]{ //Cancelled Trip *
+  background: var(--danger-color-8) !important;
+  border: 2px solid var(--danger-color-3) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="LODTR"]{ //Loading Trip *
+  background: var(--teal-lighter) !important;
+  border: 2px solid var(--teal-base) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="NEWTR"]{ //new trip *
+  background: var(--cyan-lighter) !important;
+  border: 2px solid var(--cyan-base) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="TRHLD"]{ //Transport on Hold *
+  background: var(--neutral-color-12) !important;
+  border: 2px solid var(--neutral-color-5) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="CLSTR"]{ //Trip Closed *
+  background: var(--primary-color-13) !important;
+  border: 2px solid var(--primary-color-1) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="COMTR"]{ // Trip Completed *
+  background: var(--success-color-8) !important;
+  border: 2px solid var(--success-color-3) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="EMPTR"]{ //Trip Empty *
+  background: var(--neutral-color-12) !important;
+  border: 2px solid var(--neutral-color-8) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="HLD-C"]{ //Trip on Hold No Client *
+  background: var(--yellow-lighter) !important;
+  border: 2px solid var(--yellow-base) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="HLD-S"]{ //Trip on Hold No Supplier *
+  background: var(--indigo-lighter) !important;
+  border: 2px solid var(--indigo-base) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="PLDTR"]{ //Trip Planned *
+  background: var(--lime-lighter) !important;
+  border: 2px solid var(--lime-base) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="TRPTR"]{ //Trip Transport *
+  background: var(--grape-lighter) !important;
+  border: 2px solid var(--grape-base) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="UNPTR"]{ //Trip Unplanned *
+  background: var(--primary-color-12) !important;
+  border: 2px solid var(--primary-color-4) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+[data-value="UNLTR"]{ //Unloading Trip
+  background: var(--neutral-color-12) !important;
+  border: 2px solid var(--neutral-color-3) !important;
+  border-radius: 2rem !important;
+  width: max-content;
+}
+
+// reset tag when clicked
+
+.choices__list--multiple .choices__item.is-highlighted{
+  color: black !important;
+}
+
+.choices[data-type*="select-multiple"] .choices__item.is-highlighted .choices__button::after{
+  color: unset !important;
+}
+
+.choices__list--dropdown{
+  filter: drop-shadow(0px 4px 6px black);
+}

@@ -49,3 +49,10 @@ $align-arr: (
 .justify-center{
   justify-content: center;
 }
+
+.justify-end{
+  justify-content: flex-end;
+}
+.justify-even{
+  justify-content: space-evenly;
+}

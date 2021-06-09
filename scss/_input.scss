@@ -1,0 +1,75 @@
+
+
+.radio-active{
+  &>input:before{
+    content: url('/VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg');
+    margin-right: 0.5rem;
+  }
+}
+
+.radio-inactive{
+  &>input::before{
+    content: url('/VNG_Director_NEW/img/VNG_Director_NEW.radio_off.svg');
+    margin-right: 0.5rem;
+  }
+}
+
+.radio-group-date{
+  &>div{
+    all: inherit;
+  }
+}
+
+// /VNG_Director_NEW/img/VNG_Director_NEW.radio_off.svg
+// /VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg
+// .table [data-checkbox]:before {
+//   opacity: 0;
+// }
+
+//    -webkit-transition: all 180ms linear;
+// transition: all 180ms linear;
+
+// .table [data-checkbox]:checked:after{
+//   opacity: 0;
+// }
+
+// [data-checkbox]{
+//   &:after,&:before{
+//     all: unset !important;
+//   }
+// }
+
+.radio-unchecked{
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 180ms linear;
+  transition: all 180ms linear;
+  &::before{
+    content: url(/VNG_Director_NEW/img/VNG_Director_NEW.radio_off.svg);
+    z-index: 0;
+    background: var(--neutral-color-11) !important;
+  }
+}
+
+.radio-checked{
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 180ms linear;
+  transition: all 180ms linear;
+  &::before{
+    content: url(/VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg);
+    z-index: 0;
+    background: var(--neutral-color-11) !important;
+    border: none !important;
+  }
+}
+
+.option-checkbox{
+  display: none;
+}
+
+.select-checkbox > .option-checkbox{
+  display: block;
+}

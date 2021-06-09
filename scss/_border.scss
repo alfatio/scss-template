@@ -1,0 +1,13 @@
+
+
+@for $var from 1 to 14 {
+  .border-color-p-#{$var}{
+    border-color: var(--primary-color-#{$var});
+  }
+}
+
+@for $var from 1 to 14 {
+  .border-color-n-#{$var}{
+    border-color: var(--neutral-color-#{$var});
+  }
+}

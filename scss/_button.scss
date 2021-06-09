@@ -1,0 +1,77 @@
+%reset-btn {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2px;
+  height: 2.5rem;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: var(--primary-color-6);
+  min-height: 2.5rem;
+  border: 2px solid var(--primary-color-6);
+  &:hover {
+    color: var(--primary-color-5);
+    border-color: var(--primary-color-5);
+    background: transparent;
+  }
+  &:active {
+    color: var(--primary-color-8);
+    border-color: var(--primary-color-8);
+    background: transparent;
+  }
+}
+
+.btn {
+  &-blue {
+    @extend %reset-btn;
+    background: var(--primary-color-6);
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background: var(--primary-color-4)
+    }
+    &-active{
+      @extend %reset-btn;
+      color: white;
+      cursor: pointer;
+      background-color: var(--primary-color-11)
+    }
+  }
+  &-dark-blue {
+    @extend %reset-btn;
+    background: var(--primary-color-4);
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background: var(--primary-color-2)
+    }
+  }
+  &-grey {
+    @extend %reset-btn;
+    background: var(--neutral-color-7);
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background: var(--neutral-color-5)
+    }
+  }
+  &-orange {
+    @extend %reset-btn;
+    background: var(--warning-color-2);
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background: var(--warning-color-1);
+    }
+  }
+  &-green {
+    @extend %reset-btn;
+    background: var(--success-color-3);
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background: var(--success-color-1);
+    }
+  }
+}

@@ -1,0 +1,146 @@
+
+
+$yellow: (
+  lightest: #fef5e5,
+  lighter: #fbd999,
+  light: #f8bc4c,
+  base: #f59f00,
+  dark: #d08700,
+  darker: #ac6f00,
+  darkest: #875700
+);
+$lime: (
+  lightest: #F1F8E8,
+  lighter: #C7E3A2,
+  light: #9ECD5C,
+  base: #74B816,
+  dark: #639C13,
+  darker: #51810F,
+  darkest: #40650C
+);
+$teal: (
+  lightest:  #E6F2EF,
+  lighter:  #9CCCBD,
+  light:  #52A58C,
+  base:  #087F5B,
+  dark: #076C4D,
+  darker: #065940,
+  darkest: #044632
+);
+$cyan: (
+  lightest:  #E7F2F4,
+  lighter:  #9ECCD3,
+  light:  #56A6B2,
+  base:  #0D8091,
+  dark: #0B6C7B,
+  darker: #095A66,
+  darkest: #074650
+);
+$indigo: (
+  lightest:  #ECEFFD,
+  lighter:  #B3C1F7,
+  light:  #7B92F1,
+  base:  #4263EB,
+  dark: #3854C8,
+  darker: #2E45A5,
+  darkest: #243681
+);
+$violet: (
+  lightest:  #F1EDFD,
+  lighter:  #C6B6F6,
+  light:  #9B7FEF,
+  base:  #7048E8,
+  dark: #5F3DC5,
+  darker: #4E32A2,
+  darkest: #3E2880
+);
+$grape: (
+  lightest:  #F7ECFA,
+  lighter:  #DFB2E9,
+  light:  #C678D9,
+  base:  #AE3EC9,
+  dark: #9435AB,
+  darker: #7A2B8D,
+  darkest: #60226F
+);
+$pink: (
+  lightest:  #FBEBF0,
+  lighter:  #EFADC4,
+  light:  #E27098,
+  base:  #D6336C,
+  dark: #B62B5B,
+  darker: #96244C,
+  darkest: #761C3B
+);
+
+$names: "lightest","lighter","light","base","dark","darker","darkest";
+
+:root{
+  @each $key, $val in $yellow {
+    --yellow-#{$key} : #{$val};
+  }
+  @each $key, $val in $lime {
+    --lime-#{$key} : #{$val};
+  }
+  @each $key, $val in $teal {
+    --teal-#{$key} : #{$val};
+  }
+  @each $key, $val in $cyan {
+    --cyan-#{$key} : #{$val};
+  }
+  @each $key, $val in $indigo {
+    --indigo-#{$key} : #{$val};
+  }
+  @each $key, $val in $violet {
+    --violet-#{$key} : #{$val};
+  }
+  @each $key, $val in $grape {
+    --grape-#{$key} : #{$val};
+  }
+  @each $key, $val in $pink {
+    --pink-#{$key} : #{$val};
+  }
+}
+
+@each $var in $names {
+  .bg-yellow-#{$var}{
+    background: var(--yellow-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-lime-#{$var}{
+    background: var(--lime-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-teal-#{$var}{
+    background: var(--teal-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-cyan-#{$var}{
+    background: var(--cyan-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-indigo-#{$var}{
+    background: var(--indigo-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-violet-#{$var}{
+    background: var(--violet-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-grape-#{$var}{
+    background: var(--grape-#{$var});
+  }
+}
+@each $var in $names {
+  .bg-pink-#{$var}{
+    background: var(--pink-#{$var});
+  }
+}
+
+

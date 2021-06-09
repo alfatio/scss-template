@@ -1,0 +1,23 @@
+.multi-select-react-and-mob-dropdown-bar {
+  flex-direction: row-reverse;
+  &>div:first-child {
+    transform: rotate(90deg);
+  }
+}
+
+.multi-select-react-and-mob-dropdown-menu {
+  padding: 0 !important;
+  & > div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.fa-angle-down {
+  transform: rotate(90deg);
+}
+
+.multi-select-react-and-mob-dropdown-menu-select-all-item{
+  font-weight: 400 !important;
+}

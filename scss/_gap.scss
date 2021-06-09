@@ -1,0 +1,5 @@
+@for $var from 1 to 40 {
+  .gap-#{$var}  {
+    gap: #{$var / 4}rem;
+  }
+}

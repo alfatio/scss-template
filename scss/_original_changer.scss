@@ -30,3 +30,21 @@ a{
     margin: 1.8rem 0.7rem 0 0.7rem;
   }
 }
+
+[data-advancedhtml]{
+  &>span{
+    height: 100%;
+    width: 100%;
+    font-weight: 400;
+    &>input{
+      min-height: 2.5rem !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
+}
+
+button{
+  border-radius: 2px;
+}
+
