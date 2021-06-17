@@ -1,0 +1,127 @@
+.lh-8{
+  line-height: 2rem;
+}
+
+.border-change-focus{
+  border-radius: 4px;
+  &:focus{
+    border-color: var(--primary-color-8);
+  }
+}
+
+.table-nohover{
+  &:hover{
+    filter: none;
+  }
+}
+
+.table-sub, .table-sub *{
+  background: transparent !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+.grid-col{
+  display: grid;
+}
+
+.ctr-pagination-sub{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  & .pagination{
+    margin-top: 0;
+  }
+}
+
+.a-sub-pagination{
+  display: flex;
+  width: 15ch;
+  justify-content: space-around;
+}
+
+.child-transparent{
+  &>div{
+    background: transparent;
+  }
+}
+
+.ctr-subtab{
+  & .tabs-content{
+    padding-top: 1rem !important;
+    border-top : none !important;
+  }
+}
+
+.border-sub-tab{
+  &-active{
+    border-bottom: 2px solid var(--secondary-color) !important;
+    margin: 0 !important;
+    padding: 0rem 2rem !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 3rem !important;
+  }
+  &-inactive{
+    border-bottom: 1px solid var(--color-grey-5) !important;
+    margin: 0 !important;
+    padding: 0rem 2rem !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 3rem !important;
+  }
+}
+
+[data-checkbox]:checked:before{
+  background: var(--secondary-color) !important;
+}
+
+.white-space-nowrap{
+  white-space: nowrap;
+}
+
+.radio-row-form{
+  &>div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.custom-table{
+  & tr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  & td{
+    display: grid;
+    place-items: center;
+  }
+}
+
+
+.ctr-form-address{
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+
+// hide modal grey area
+
+// .sidebar.sidebar-open::before{
+//   width: 0 !important;
+// }

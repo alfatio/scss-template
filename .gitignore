@@ -1,8 +1,7 @@
 *.html
 vng.css
 css/
-svg/*
+svg/dist
 crmOS.css
 *.js
 tailwind.css
-*crm*.*
