@@ -7,3 +7,7 @@
 .trans-padding-500-ease{
   transition: padding 500ms ease;
 }
+
+.table-trans-500 *{
+  transition: display 500ms ease;
+}
