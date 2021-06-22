@@ -11,3 +11,10 @@
     border-color: var(--neutral-color-#{$var});
   }
 }
+
+@for $var from 1 to 14 {
+  .b-radius-#{$var}{
+    border-radius: #{$var}px;
+  }
+}
+

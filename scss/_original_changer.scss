@@ -21,8 +21,16 @@ a{
   }
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .active-screen{
   background: var(--neutral-color-11);
+}
+
+.hover-grey:hover{
+  background-color: var(--neutral-color-12);
 }
 
 .fullwidthcenter{
@@ -52,4 +60,51 @@ button{
 .img-1\.5{
   height: 1.5rem;
   width: 1.5rem;
+}
+
+
+
+.ctr-draggable{
+  & .icon-draggable{
+    display: none;
+  }
+  &:hover .icon-draggable{
+    display: block;
+  }
+}
+
+.dropdown-column-setting{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::after{
+    content: ' ';
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    right: 1rem;
+    border-right: 2px solid var(--primary-color-6);
+    border-bottom: 2px solid var(--primary-color-6);
+    transform: rotate(45deg) translate(-1px, 0px);
+  }
+}
+.dropdown-column-setting-disabled{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::after{
+    content: ' ';
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    right: 1rem;
+    border-right: 2px solid var(--neutral-color-9);
+    border-bottom: 2px solid var(--neutral-color-9);
+    transform: rotate(45deg) translate(-1px, 0px);
+  }
+  & > select{
+    background: var(--neutral-color-12);
+  }
 }

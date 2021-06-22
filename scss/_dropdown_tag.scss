@@ -146,6 +146,10 @@
   }
 }
 
+.choices__list--multiple .choices__item{
+  margin-bottom: var(--space-xs);
+}
+
 .choices__list--multiple .choices__item.is-highlighted{
   color: black !important;
 }
@@ -158,3 +162,15 @@
   filter: drop-shadow(0px 4px 6px black);
 }
 
+.choices__list--multiple{
+  max-height: 5rem;
+  overflow: auto;
+  & > div{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    height: 2.5rem !important;
+    > button::after{
+      color: white !important;
+    }
+  }
+}

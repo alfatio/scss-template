@@ -3,10 +3,18 @@
 .separator-mix{
   height: 1px;
   background: var(--color-grey-5);
+  min-height: 1px;
   margin: 0 2rem;
 }
 
 .separator-mix-full{
   height: 1px;
+  min-height: 1px;
   background: var(--color-grey-5);
 }
+.separator-mix-full{
+  height: 1px;
+  background: #D1D6DB;
+  min-height: 1px;
+}
+
