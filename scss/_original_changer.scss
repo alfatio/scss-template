@@ -87,6 +87,7 @@ button{
     border-right: 2px solid var(--primary-color-6);
     border-bottom: 2px solid var(--primary-color-6);
     transform: rotate(45deg) translate(-1px, 0px);
+    pointer-events: none;
   }
 }
 .dropdown-column-setting-disabled{
