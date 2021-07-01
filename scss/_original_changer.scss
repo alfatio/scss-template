@@ -21,6 +21,10 @@ a{
   }
 }
 
+.position-relative{
+  position: relative;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -50,6 +54,12 @@ a{
       width: 100% !important;
     }
   }
+}
+
+span.input-text{
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 button{
@@ -108,4 +118,8 @@ button{
   & > select{
     background: var(--neutral-color-12);
   }
+}
+
+.OSBlockWidget{
+  display: contents;
 }

@@ -32,12 +32,14 @@
 
 @for $var from 1 to 26 {
   .px-#{$var}  {
-    padding: 0 #{$var / 4}rem;
+    padding-left: #{$var / 4}rem;
+    padding-right: #{$var / 4}rem;
   }
 }
 
 @for $var from 1 to 26 {
   .py-#{$var}  {
-    padding: #{$var / 4}rem 0;
+    padding-top: #{$var / 4}rem;
+    padding-bottom: #{$var / 4}rem;
   }
 }
