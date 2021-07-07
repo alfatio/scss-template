@@ -7,25 +7,25 @@ $sides: (
 
 @for $var from 1 to 40 {
   .mt-#{$var}  {
-    margin-top: #{$var / 4}rem;
+    margin-top: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .mr-#{$var}  {
-    margin-right: #{$var / 4}rem;
+    margin-right: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .mb-#{$var}  {
-    margin-bottom: #{$var / 4}rem;
+    margin-bottom: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .ml-#{$var}  {
-    margin-left: #{$var / 4}rem;
+    margin-left: #{$var * 0.25}rem;
   }
 }
 

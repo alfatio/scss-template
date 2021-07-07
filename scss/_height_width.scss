@@ -20,37 +20,37 @@
 
 @for $var from 1 to 40 {
   .h-#{$var}  {
-    height: #{$var / 4}rem;
+    height: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .w-#{$var}  {
-    width: #{$var / 4}rem;
+    width: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .min-h-#{$var}  {
-    min-height: #{$var / 4}rem;
+    min-height: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .min-w-#{$var}  {
-    min-width: #{$var / 4}rem;
+    min-width: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .max-h-#{$var}  {
-    max-height: #{$var / 4}rem;
+    max-height: #{$var * 0.25}rem;
   }
 }
 
 @for $var from 1 to 40 {
   .max-w-#{$var}  {
-    max-width: #{$var / 4}rem;
+    max-width: #{$var * 0.25}rem;
   }
 }
 
