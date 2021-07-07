@@ -1,0 +1,79 @@
+
+
+
+.table-header{
+  padding-left: 1rem;
+  display: flex;
+  align-items: flex-end;
+  &-trip{
+    padding-left: 2rem;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.order--1{
+  display: none;
+}
+
+@for $var from 0 to 25 {
+  .order-#{$var}  {
+    order: $var;
+  }
+}
+
+.col-{
+  &radio{
+    width: 4rem;
+    & > span{
+      display: grid;
+      place-items: center;
+    }
+  }
+  
+  &trip-id{
+    width: 6.5rem;
+    & > div{
+      height: 100%;
+    }
+  }
+
+  &trip-picture{
+    width: 4rem;
+  }
+
+  &trip-client{
+    width: 20rem;
+  }
+
+  &trip-date{
+    width: 7.75rem;
+  }
+
+  &trip-time{
+    width: 6.875rem;
+  }
+
+  &trip-supplier{
+    width: 20rem;
+  }
+
+  &trip-product{
+    width: 20rem;
+  }
+
+  &trip-delivery-date{
+    width: 7.75rem;
+  }
+
+  &trip-delivery-time{
+    width: 7rem;
+  }
+
+  &trip-load{
+    flex-grow: 1;
+  }
+
+}
+
+
