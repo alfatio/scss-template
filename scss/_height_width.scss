@@ -17,6 +17,19 @@
 .max-h-full{
   max-height: 100%;
 }
+.h-half{
+  height: 50%;
+}
+
+.w-half{
+  width: 50%;
+}
+.max-h-half{
+  max-height: 50%;
+}
+.max-w-half{
+  max-width: 50%;
+}
 
 @for $var from 1 to 40 {
   .h-#{$var}  {

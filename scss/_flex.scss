@@ -20,6 +20,10 @@ $align-arr: (
   flex-end
 );
 
+.flex-grow{
+  flex-grow: 1;
+}
+
 .flex-row {
   @extend %flex-row;
 }

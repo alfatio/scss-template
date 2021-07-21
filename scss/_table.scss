@@ -1,4 +1,19 @@
 
+.quick-fix-table{
+  & *{
+    font-size: 1rem !important;
+  }
+  & th{
+    background: transparent !important;
+    border: none !important;
+    color: var(--neutral-color-6) !important;
+    font-weight: 400 !important;
+  }
+  & .sortable-icon{
+    display: none;
+  }
+}
+
 .table-header{
   & th:first-child{
     border: none;
@@ -40,6 +55,7 @@ table.table tbody > tr:first-child  td {
   font-weight: 400;
   color: var(--primary-color-7);
   text-decoration: underline;
+  font-size: 1rem;
   &:hover{
     color: var(--primary-color-4);
   }

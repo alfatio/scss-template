@@ -51,6 +51,10 @@ body {
   scrollbar-width: none;
 }
 
+.display-none{
+  display: none;
+}
+
 .w-full{
   width: 100%;
 }
@@ -81,6 +85,9 @@ body {
 
 .cursor-pointer{
   cursor: pointer;
+  & :disabled{
+    cursor: default;
+  }
 }
 
 .container-vanilla{
@@ -953,6 +960,17 @@ th:hover,tr:hover .checkbox-invisible{
   justify-content: flex-start;
   border-radius: 2px;
   margin-bottom: 1.5rem;
+}
+
+.btn-ribbon-action{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .button-for-modal{

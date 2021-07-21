@@ -12,6 +12,18 @@
   }
 }
 
+.ctr-table-header{
+  & > div{
+    color: var(--neutral-color-6);
+  }
+}
+
+.text-left{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
 .order--1{
   display: none;
 }
@@ -44,6 +56,7 @@
 
   &trip-client{
     width: 20rem;
+    flex-grow: 1;
   }
 
   &trip-date{
@@ -56,10 +69,12 @@
 
   &trip-supplier{
     width: 20rem;
+    flex-grow: 1;
   }
 
   &trip-product{
     width: 20rem;
+    flex-grow: 1;
   }
 
   &trip-delivery-date{
@@ -72,8 +87,20 @@
 
   &trip-load{
     flex-grow: 1;
+    width: 12rem;
+  }
+
+  &trip-branch{
+    width: 8rem;
+  }
+
+  &trip-created{
+    width: 8rem;
+  }
+
+  &trip-delete{
+    width: 2rem;
   }
 
 }
-
 

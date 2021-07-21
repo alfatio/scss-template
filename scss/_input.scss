@@ -3,17 +3,18 @@
 span.input-search{
   width: 100%;
 }
-
+///VNG_Director/img/VNG_Director.radio_off.svg
+///VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg
 .radio-active{
   &>input:before{
-    content: url('/VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg');
+    content: url('/VNG_Director/img/VNG_Director.radio_on.svg');
     margin-right: 0.5rem;
   }
 }
 
 .radio-inactive{
   &>input::before{
-    content: url('/VNG_Director_NEW/img/VNG_Director_NEW.radio_off.svg');
+    content: url('/VNG_Director/img/VNG_Director.radio_off.svg');
     margin-right: 0.5rem;
   }
 }
@@ -22,6 +23,11 @@ span.input-search{
   &>div{
     all: inherit;
   }
+}
+
+.ctr-input-load > span:first-child {
+  display: contents;
+  align-items: center;
 }
 
 // /VNG_Director_NEW/img/VNG_Director_NEW.radio_off.svg
@@ -50,7 +56,7 @@ span.input-search{
   -webkit-transition: all 180ms linear;
   transition: all 180ms linear;
   &::before{
-    content: url(/VNG_Director_NEW/img/VNG_Director_NEW.radio_off.svg);
+    content: url(/VNG_Director/img/VNG_Director.radio_off.svg);
     z-index: 0;
     background: var(--neutral-color-11) !important;
   }
@@ -63,7 +69,7 @@ span.input-search{
   -webkit-transition: all 180ms linear;
   transition: all 180ms linear;
   &::before{
-    content: url(/VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg);
+    content: url(/VNG_Director/img/VNG_Director.radio_on.svg);
     z-index: 0;
     background: var(--neutral-color-11) !important;
     border: none !important;

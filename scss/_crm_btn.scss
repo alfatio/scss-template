@@ -1,0 +1,15 @@
+
+.btn-form{
+    background: white;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    width: max-content;
+    color: var(--secondary-color);
+    padding: .5rem 1rem;
+    cursor: pointer;
+    & :disabled{
+        cursor: default;
+        color: var(--color-grey-6);
+        border-color: var(--color-grey-6);
+    }
+}
