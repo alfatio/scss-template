@@ -1,5 +1,15 @@
 
 
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.form-label{
+  font-size: .875rem;
+  color: var(--neutral-color-6);
+}
+
 span.input-search{
   width: 100%;
 }
@@ -82,4 +92,12 @@ span.input-search{
 
 .select-checkbox > .option-checkbox{
   display: block;
+}
+
+.radio-form > div > input[type="radio"]{
+  appearance: auto;
+  color: black;
+  border: 0;
+  height: 20px;
+  width: 20px;
 }

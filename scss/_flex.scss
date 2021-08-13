@@ -64,3 +64,12 @@ $align-arr: (
 .justify-even{
   justify-content: space-evenly;
 }
+
+.child-grow{
+  > * {
+    flex-grow: 1;
+  }
+  &-div > div{
+    flex-grow: 1;
+  }
+}

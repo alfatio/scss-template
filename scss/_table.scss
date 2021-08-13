@@ -1,4 +1,10 @@
 
+
+.border-collapse{
+  border-collapse: collapse;
+}
+
+
 .quick-fix-table{
   & *{
     font-size: 1rem !important;
@@ -35,12 +41,21 @@ table.table tbody tr:first-child td:not(:first-child),tbody tr:first-child td:nt
 .sortable-icon{
   display: none;
 }
+
  
-.table-header th {
-  border: none !important;
-  background: var(--neutral-color-11) !important;
-  color: var(--neutral-color-6) !important;
-  filter: drop-shadow(0px 2.5px 0px grey);
+.table-header {
+
+  & th{
+    border: none !important;
+    background: var(--neutral-color-11) !important;
+    color: var(--neutral-color-6) !important;
+    filter: drop-shadow(0px 2.5px 0px grey);
+  }
+
+  &.no-shadow th{
+    filter: none;
+  }
+  
 }
  
 table.table tbody td {
@@ -109,7 +124,84 @@ table.table tbody > tr:first-child  td {
   place-items: center;
 }
  
-/*
-PLDTR
- 
-*/
+
+.table-form-multi-shipment{
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  max-height: 500px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  &:last-child{
+    border-right: none;
+  }
+}
+
+.table-header-pricing{
+  background-color: var(--neutral-color-11);
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  width: 100%;
+  & td{
+    padding: .5rem 1rem;
+  }
+}
+
+.table-middle-pricing{
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  color: black;
+  & tr{
+    border-bottom: 1px solid var(--neutral-color-10);
+  }
+  & td{
+    padding: .5rem 1rem;
+  }
+}
+
+.table-notes{
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  & th{
+    color: var(--neutral-color-6);
+    text-align: left;
+    padding: .5rem;
+    font-weight: 400;
+    & > .sortable-icon{
+      visibility: hidden;
+    }
+  }
+  & td{
+    padding: 1rem;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--neutral-color-11);
+    border-top: 0;
+    border-left: 0;
+    &:last-child{
+      display: grid;
+      place-items: center;
+      border-right: 0;
+    }
+    & > a {
+      & > span{
+        font-size: 1rem;
+        color: var(--primary-color-6);
+      }
+      & > i{
+        color: var(--primary-color-6);
+      }
+    } 
+  }
+}

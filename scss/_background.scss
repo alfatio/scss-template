@@ -1,8 +1,29 @@
 
+$bar-color : (
+  cancelled-color: var(--cancelled-color),
+  loading-color: var(--loading-color),
+  new-color: var(--new-color),
+  on-hold-color: var(--on-hold-color),
+  closed-color: var(--closed-color),
+  completed-color: var(--completed-color),
+  empty-color: var(--empty-color),
+  no-client-color: var(--no-client-color),
+  no-supplier-color: var(--no-supplier-color),
+  planned-color: var(--planned-color),
+  transport-color: var(--transport-color),
+  unplanned-color: var(--unplanned-color),
+  unloading-color: var(--unloading-color)
+);
+
 .bg-transparent{
   background: transparent;
 }
 
+@each $key, $val in $bar-color {
+  .bg-#{$key}{
+    background-color: #{$val};
+  }
+}
 
 @for $var from 1 to 14 {
   .bg-p-#{$var}{

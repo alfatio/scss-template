@@ -1,4 +1,5 @@
 
+
 .btn-form{
     background: white;
     border: 2px solid var(--secondary-color);
@@ -13,3 +14,88 @@
         border-color: var(--color-grey-6);
     }
 }
+
+
+.group-button-direction{
+    & > div{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      & > .btn-group-direction{
+        height: 2rem;
+        padding: .25rem 1rem;
+        border-radius: 4px;
+        background: white;
+        border: none;
+        color: var(--secondary-color);
+        cursor: pointer;
+  
+        &[aria-checked="true"]{
+          background: var(--secondary-color);
+          color: white;
+        }
+  
+        &:disabled{
+          filter: grayscale(1);
+        }
+      }
+    }
+  }
+
+  .group-button-priority{
+    & > div{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      & > .btn-group-priority{
+        height: 2rem;
+        padding: .25rem 1rem;
+        border-radius: 4px;
+        border: 1px solid var(--secondary-color);
+        background: transparent;
+        color: var(--secondary-color);
+        cursor: pointer;
+  
+        &[aria-checked="true"]{
+          color: white;
+          border: none;
+          &.low{
+            background: var(--success-color-3);
+          }
+          &.medium{
+              background: var(--warning-color-3);
+          }
+          &.high{
+              background: var(--danger-color-3);
+          }
+        }
+  
+        &:disabled{
+          filter: grayscale(1);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .btn-action-ribbon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: .5rem 1.25rem .5rem .75rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    &:disabled{
+      cursor: not-allowed;
+    }
+    &-no-border{
+      @extend .btn-action-ribbon;
+      border: none;
+    }
+  }

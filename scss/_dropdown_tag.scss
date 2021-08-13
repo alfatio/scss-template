@@ -17,108 +17,109 @@
 
 [data-value="CANTR"]{ //Cancelled Trip *
   // background: var(--danger-color-8) !important;
-  background: var(--danger-color-3) !important;
-  border: 2px solid var(--danger-color-3) !important;
+  background: var(--cancelled-color) !important;
+  border: 2px solid var(--cancelled-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="LODTR"]{ //Loading Trip *
   // background: var(--teal-lighter) !important;
-  background: var(--teal-base) !important;
-  border: 2px solid var(--teal-base) !important;
+  background: var(--loading-color) !important;
+  border: 2px solid var(--loading-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="NEWTR"]{ //new trip *
   // background: var(--cyan-lighter) !important;
-  background: var(--cyan-base) !important;
-  border: 2px solid var(--cyan-base) !important;
+  background: var(--new-color) !important;
+  border: 2px solid var(--new-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="TRHLD"]{ //Transport on Hold *
   // background: var(--neutral-color-12) !important;
-  background: var(--neutral-color-5) !important;
-  border: 2px solid var(--neutral-color-5) !important;
+  background: var(--on-hold-color) !important;
+  border: 2px solid var(--on-hold-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="CLSTR"]{ //Trip Closed *
   // background: var(--primary-color-13) !important;
-  background: var(--primary-color-1) !important;
-  border: 2px solid var(--primary-color-1) !important;
+  background: var(--closed-color) !important;
+  border: 2px solid var(--closed-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="COMTR"]{ // Trip Completed *
   // background: var(--success-color-8) !important;
-  background: var(--success-color-3) !important;
-  border: 2px solid var(--success-color-3) !important;
+  background: var(--completed-color) !important;
+  border: 2px solid var(--completed-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="EMPTR"]{ //Trip Empty *
   // background: var(--neutral-color-12) !important;
-  background: var(--neutral-color-8) !important;
-  border: 2px solid var(--neutral-color-8) !important;
+  background: var(--empty-color) !important;
+  border: 2px solid var(--empty-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="HLD-C"]{ //Trip on Hold No Client *
   // background: var(--yellow-lighter) !important;
-  background: var(--yellow-base) !important;
-  border: 2px solid var(--yellow-base) !important;
+  background: var(--no-client-color)  !important;
+  border: 2px solid var(--no-client-color)  !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="HLD-S"]{ //Trip on Hold No Supplier *
   // background: var(--indigo-lighter) !important;
-  background: var(--indigo-base) !important;
-  border: 2px solid var(--indigo-base) !important;
+  background: var(--no-supplier-color) !important;
+  border: 2px solid var(--no-supplier-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="PLDTR"]{ //Trip Planned *
   // background: var(--lime-lighter) !important;
-  background: var(--lime-base) !important;
-  border: 2px solid var(--lime-base) !important;
+  background: var(--planned-color)  !important;
+  border: 2px solid var(--planned-color)  !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="TRPTR"]{ //Trip Transport *
   // background: var(--grape-lighter) !important;
-  background: var(--grape-base) !important;
-  border: 2px solid var(--grape-base) !important;
+  background: var(--transport-color) !important;
+  border: 2px solid var(--transport-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="UNPTR"]{ //Trip Unplanned *
   // background: var(--primary-color-12) !important;
-  background: var(--primary-color-4) !important;
-  border: 2px solid var(--primary-color-4) !important;
+  background: var(--unplanned-color)  !important;
+  border: 2px solid var(--unplanned-color)  !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
 [data-value="UNLTR"]{ //Unloading Trip
   // background: var(--neutral-color-12) !important;
-  background: var(--neutral-color-3) !important;
-  border: 2px solid var(--neutral-color-3) !important;
+  background: var(--unloading-color) !important;
+  border: 2px solid var(--unloading-color) !important;
   border-radius: 2rem !important;
   width: max-content;
   color: white !important;
 }
+
 
 // reset tag when clicked
 

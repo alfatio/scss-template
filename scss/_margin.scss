@@ -5,25 +5,25 @@ $sides: (
   l
 );
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .mt-#{$var}  {
     margin-top: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .mr-#{$var}  {
     margin-right: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .mb-#{$var}  {
     margin-bottom: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .ml-#{$var}  {
     margin-left: #{$var * 0.25}rem;
   }

@@ -104,3 +104,20 @@ $danger : (
   }
 }
 
+// bar color 
+
+:root{
+  --cancelled-color: #EB5757;
+  --loading-color: #C7714A;
+  --new-color: #4B6D59;
+  --on-hold-color: #5F6C7B;
+  --closed-color: #A7473B;
+  --completed-color: #219653;
+  --empty-color: #93969A;
+  --no-client-color: #B5A14A;
+  --no-supplier-color: #496E8D;
+  --planned-color: #86A062;
+  --transport-color: #6D3C3C;
+  --unplanned-color: #333E68;
+  --unloading-color: #988C74;
+}

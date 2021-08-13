@@ -3,13 +3,25 @@
 
 .table-header{
   padding-left: 1rem;
-  display: flex;
-  align-items: flex-end;
   &-trip{
     padding-left: 2rem;
     display: flex;
     align-items: flex-end;
   }
+}
+
+.noshrink > div{
+  flex-shrink: 0;
+}
+
+.noshrink.div-row > div{
+  background: white;
+}
+
+.span-col{
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
 }
 
 .ctr-table-header{
@@ -36,6 +48,7 @@
 
 .col-{
   &radio{
+    min-width: 4rem;
     width: 4rem;
     & > span{
       display: grid;
@@ -99,6 +112,18 @@
   }
 
   &trip-delete{
+    width: 2rem;
+  }
+
+
+  // SALE
+
+  &sale-order{
+    width: 5.5rem;
+  }
+
+
+  &sale-line{
     width: 2rem;
   }
 

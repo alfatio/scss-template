@@ -31,37 +31,37 @@
   max-width: 50%;
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .h-#{$var}  {
     height: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .w-#{$var}  {
     width: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .min-h-#{$var}  {
     min-height: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .min-w-#{$var}  {
     min-width: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .max-h-#{$var}  {
     max-height: #{$var * 0.25}rem;
   }
 }
 
-@for $var from 1 to 40 {
+@for $var from 1 to 56 {
   .max-w-#{$var}  {
     max-width: #{$var * 0.25}rem;
   }

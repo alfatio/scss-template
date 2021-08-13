@@ -22,6 +22,11 @@
 textarea{
   resize: none;
 }
+
+label{
+  width: max-content;
+}
+
 .active-screen{
   background: var(--used-bg);
 }
@@ -297,6 +302,8 @@ table{
   flex-wrap: nowrap;
   padding: 1rem;
   padding-top: 0;
+  overflow-y: hidden;
+  max-height: 100vh;
 }
 .container-mini {
   width: 100%;
@@ -509,12 +516,12 @@ table{
   white-space: nowrap;
   font-weight: initial;
 }
-.min-h-48 {
-  min-height: 48px;
-}
-.min-h-40 {
-  min-height: 40px;
-}
+// .min-h-48 {
+//   min-height: 48px;
+// }
+// .min-h-40 {
+//   min-height: 40px;
+// }
 .grid-center {
   display: grid;
   place-items: center;
@@ -877,7 +884,7 @@ th:hover,tr:hover .checkbox-invisible{
 }
 
 .ribbon-action-icon{
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 0.4rem;
   cursor: pointer;
   color: white;
