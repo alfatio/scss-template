@@ -1,4 +1,6 @@
-
+.no-border{
+  border: none;
+}
 
 @for $var from 1 to 14 {
   .border-color-p-#{$var}{

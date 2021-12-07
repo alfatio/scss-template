@@ -132,6 +132,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  height: 40px !important;
+  overflow: auto;
   select{
     height: 100%;
   }
@@ -164,7 +166,8 @@
 }
 
 .choices__list--dropdown{
-  filter: drop-shadow(0px 4px 6px black);
+  filter: drop-shadow(0px 1px 2px grey);
+  z-index: 10 !important;
 }
 
 .choices__list--multiple{

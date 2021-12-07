@@ -5,6 +5,10 @@ $sides: (
   l
 );
 
+.no-margin{
+  margin: 0;
+}
+
 @for $var from 1 to 56 {
   .mt-#{$var}  {
     margin-top: #{$var * 0.25}rem;

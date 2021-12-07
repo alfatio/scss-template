@@ -1,0 +1,38 @@
+
+.trip-new-form-body{
+    height: 80vh;
+    width: 70vw;
+}
+
+.trip-new-form-title{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--neutral-color-2);
+    border-bottom: 1px solid #C5CCD3;
+    justify-content: space-between;
+}
+
+.btn-hover{
+    &-trigger{
+        &:hover > .btn-hover-show{
+            display: flex;
+        }
+    }
+    &-show{
+        display: none;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.choices[data-type*="select-one"]{
+    display: flex;
+    align-items: center;
+    &::after{
+        top: unset;
+    }
+}

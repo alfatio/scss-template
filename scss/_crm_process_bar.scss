@@ -1,0 +1,106 @@
+
+.phase-item{
+    width: 100%;
+    min-width: 400px;
+    background: var(--neutral-color-13);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 1.75rem;
+    gap: .75rem;
+    height: 2.5rem;
+    &:not(:first-child)::before{
+        content: '';
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        background: var(--used-bg);
+        left: -0.5rem;
+        transform: rotateZ(45deg);
+        z-index: 1;
+    }
+    &:not(:last-child)::after{
+        content: '';
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        right: -0.5rem;
+        background: white;
+        transform: rotateZ(45deg);
+        z-index: 15;
+    }
+    &:last-child .phase-item-ctr-form{
+        right: 0;
+    }
+}
+
+
+.phase-item-ctr-absolute{
+    position: absolute;
+    z-index: 40;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-grow: 1;
+}
+
+.phase-item-ctr-form{
+    margin-top: 2px;
+    position: absolute;
+    background: white;//var(--bg-content-color);
+    padding: 10px;
+    border: 1px solid #C8C6C4;
+    // width: 100%;
+    flex-grow: 1;
+    cursor: auto;
+    width: 500px;
+    & .choices__list--dropdown {
+        position: fixed;
+        top: unset;
+        // width: auto;
+        width: 313.33px;
+    }
+}
+
+.phase-ctr-input{
+    color: var(--grey-color-6);
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    & label{
+        margin: 0;
+        &>span{
+            white-space: nowrap;
+        }
+    }
+    & input::placeholder{
+        color: var(--grey-color-6);
+    }
+    & > div{
+        padding: .5rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #CED4DA;
+        & > div{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+.phase-arrow{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #D2D0CE;
+    box-shadow: 2px 0px 4px rgb(0 0 0 / 15%);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}

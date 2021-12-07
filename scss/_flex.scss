@@ -11,7 +11,10 @@
 $jus-arr: (
   flex-start,
   center,
-  flex-end
+  flex-end,
+  space-between,
+  space-around,
+  space-evenly
 );
 
 $align-arr: (
@@ -40,6 +43,10 @@ $align-arr: (
   flex-wrap: nowrap;
 }
 
+.flex-no-shrink{
+  flex-shrink: 0;
+}
+
 @each $var in $jus-arr {
   .justify-#{$var} {
     justify-content: #{$var};
@@ -54,13 +61,7 @@ $align-arr: (
   align-items: stretch;
 }
 
-.justify-center{
-  justify-content: center;
-}
 
-.justify-end{
-  justify-content: flex-end;
-}
 .justify-even{
   justify-content: space-evenly;
 }

@@ -8,6 +8,16 @@
   background: transparent;
 }
 
+.no-scrollbar{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar{
+  display: none;
+  width: 0px;
+  background: transparent;
+  }
+}
+
 p{
   padding: 0;
   margin: 0;
@@ -179,4 +189,10 @@ button{
 .footerTrip{
   position: sticky;
   bottom: 0;
+}
+
+.white-space{
+  &-nowrap{
+    white-space: nowrap;
+  }
 }

@@ -10,8 +10,14 @@
   color: var(--neutral-color-6);
 }
 
-span.input-search{
-  width: 100%;
+span.input-{
+  &search{
+    width: 100%;
+  }
+  &text{
+    width: 100%;
+  }
+
 }
 ///VNG_Director/img/VNG_Director.radio_off.svg
 ///VNG_Director_NEW/img/VNG_Director_NEW.radio_on.svg

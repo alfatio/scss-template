@@ -1,0 +1,27 @@
+
+
+
+
+////// table horizontal CRM
+
+.horizontal-table{
+    border-collapse: collapse;
+    width: 100%;
+    & td{
+      color: #323130;
+      font-size: 1rem;
+    }
+    & th{
+      color: var(--color-grey-6);
+      font-weight: 400;
+      font-size: 1rem;
+      padding: 0;
+      text-align: left;
+    }
+    & tr{
+      height: 3.5rem;
+      border-bottom: 1px solid #CED4DA;
+      padding: 0;
+    }
+  }
+  
