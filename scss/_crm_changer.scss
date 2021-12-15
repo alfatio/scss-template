@@ -20,7 +20,7 @@
   border-top: none !important;
   border-right: none !important;
 }
-
+[type=search]
 .grid-col{
   display: grid;
 }
@@ -180,4 +180,10 @@
     top: 0;
     z-index: 1;
   }
+}
+
+[data-input]:empty{
+  height: 40px;
+  padding: 0.5rem 1rem;
+  width: 100%;
 }
