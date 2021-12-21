@@ -13,6 +13,7 @@
   --color-grey-5: #C8C6C4;
   --color-grey-6: #8A8886;
   --color-almost-black: #323130;
+  --color-error-base: #A4262C;
 }
 
 input[type="date"], input[type="datetime-local"]{
@@ -633,10 +634,7 @@ textarea {
 // .min-h-40 {
 //   min-height: 40px;
 // }
-.grid-center {
-  display: grid;
-  place-items: center;
-}
+
 .side-menu-mini {
   display: flex;
   flex-direction: column;
