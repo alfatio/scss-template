@@ -1,0 +1,22 @@
+
+
+
+
+input[type="time"] {
+    position: relative;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+
+input[type="time"]:before{
+    content: '';
+    background: url('/CRM_WEB/img/CRM_WEB.clock_blue.svg');
+    background-size: 1.1rem;
+    position: absolute;
+    height: 1.1rem;
+    width: 1.1rem;
+    right: 0.75rem;
+}

@@ -3,9 +3,15 @@
 .grid{
   display: grid;
   &-center{
+    @extend .grid;
     place-items: center;
   }
   &-start{
+    @extend .grid;
     place-items: start;
   }
+}
+
+.place-center{
+  place-items: center;
 }
