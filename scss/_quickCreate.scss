@@ -2,7 +2,17 @@
 
 
 
-.sidebar-content{
-    padding-bottom: 4.5rem;
+// .sidebar-content{
+//     padding-bottom: 4.5rem;
+// }
+
+.form-quick-create .action-icon {
+    font-size: .75rem;
 }
 
+.text-selection-list{
+    display: block;
+    max-width: 35ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

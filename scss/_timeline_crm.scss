@@ -112,6 +112,11 @@
 }
 
 .tl-filter-icon-ctr{
+
+    &:hover{
+        background: var(--color-grey-2);
+    }
+
     & .tl-filter-icon{
         height: 2rem;
         width: 2rem;
